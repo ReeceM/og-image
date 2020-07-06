@@ -1,17 +1,10 @@
-<a href="https://vercel.com/new/project?template=vercel/og-image"><img width="128" src="https://vercel.com/button" align="right"></a>
-
 # [Open Graph Image as a Service](https://og-image.now.sh)
-
-<a href="https://twitter.com/vercel/status/1092587111985881088">
-    <img align="right" src="https://raw.githubusercontent.com/vercel/og-image/master/public/tweet.png" height="300" />
-</a>
 
 Serverless service that generates dynamic Open Graph images that you can embed in your `<meta>` tags.
 
 For each keystroke, headless chromium is used to render an HTML page and take a screenshot of the result which gets cached.
 
 See the image embedded in the tweet for a real use case.
-
 
 ## What is an Open Graph Image?
 
@@ -36,6 +29,8 @@ The short answer is that it would take a long time to painstakingly design an im
 
 That's where `og-image.now.sh` comes in. We can simply pass the title of our blog post to our generator service and it will generate the image for us on the fly!
 
+Better example with all options for remembering : `https://og-image.now.sh/Open%20Graph%20Image%20as%20a%20Service.png?theme=light&amp;md=1&amp;fontSize=95px&amp;images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-black-triangle.svg`
+
 It looks like the following:
 
 ```html
@@ -59,12 +54,6 @@ You'll want to fork this repository and deploy your own image generator.
 6. Run locally with `vercel dev` and visit [localhost:3000](http://localhost:3000)  (if nothing happens, run `npm install -g vercel`)
 7. Deploy to the cloud by running `vercel` and you'll get a unique URL
 8. Setup [GitHub](https://vercel.com/github) to autodeploy on push
-
-If you are using a paid plan, you can do a one-click deploy with the button below.
-
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=vercel/og-image)
-
-Once you have an image generator that sparks joy, you can setup [automatic GitHub](https://vercel.com/github) deployments so that pushing to master will deploy to production! 🚀
 
 ## Authors
 
